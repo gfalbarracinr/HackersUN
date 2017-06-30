@@ -1,0 +1,22 @@
+---
+layout: default
+title: Blog
+---
+<main class="mdl-layout__content">
+    <div class="mdl-layout__tab-panel is-active" id="overview">
+     {% for post in site.posts %}
+      <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp section-center-gio">
+        <div class="mdl-card mdl-cell mdl-cell--12-col">
+          <div class="mdl-card__supporting-text">
+            <h4> {{ post.title }}</h4>
+            {{ post.content | strip_html | truncatewords: 50 }}
+          </div>
+          <div class="mdl-card__actions">
+            <a href="{{ post.url }}" class="mdl-button">Read more</a>
+          </div>
+        </div>
+      </section>
+    {%  endfor %}
+    </div>
+
+
