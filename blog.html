@@ -12,7 +12,7 @@ title: Blog
             {{ post.content | strip_html | truncatewords: 50 }}
           </div>
           <div class="mdl-card__actions">
-            <a href="{{ post.url }}" class="mdl-button">Read more</a>
+            <a href="{{site.baseurl}}/{{ post.url }}" class="mdl-button">Read more</a>
           </div>
         </div>
       </section>
