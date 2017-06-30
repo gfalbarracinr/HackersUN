@@ -266,7 +266,7 @@ html, body {
 }
 
 .mdl-color--primary {
-background-image: url("/images/page/man.png");
+background-image: url("{{ site.baseurl }}/images/page/man.png");
 
 }
 .a-gio{
